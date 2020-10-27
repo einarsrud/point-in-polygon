@@ -1,0 +1,23 @@
+{
+  "name": "einarsrud/point-in-polygon",
+  "description": "Point In Polygon",
+  "keywords": [],
+  "homepage": "https://github.com/einarsrud/point-in-polygon",
+  "license": "Copyright",
+  "authors": [
+    {
+      "name": "Christopher Einarsrud",
+      "email": "christopher@einarsrud.no",
+      "homepage": "http://www.raconteur.no",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php" : ">=5.4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Raconteur\\PointInPolygon\\": "src"
+    }
+  }
+}
