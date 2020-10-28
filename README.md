@@ -12,17 +12,21 @@ $ composer require einarsrud/point-in-polygon
 ## Usage
 
 ``` php
+// Import the classes
+use Raconteur\PointInPolygon\Polygon;
+use Raconteur\PointInPolygon\Point;
+
 // Create polygon points
 $polygonPoints = [];
-$polygonPoints[] = new \Raconteur\PointInPolygon\Point(0, 0);
-$polygonPoints[] = new \Raconteur\PointInPolygon\Point(4, 0);
-$polygonPoints[] = new \Raconteur\PointInPolygon\Point(2, 4);
-$polygonPoints[] = new \Raconteur\PointInPolygon\Point(0, 4);
+$polygonPoints[] = new Point(0, 0);
+$polygonPoints[] = new Point(4, 0);
+$polygonPoints[] = new Point(2, 4);
+$polygonPoints[] = new Point(0, 4);
 
 // Create a Polygon
-$polygon = new \Raconteur\PointInPolygon\Polygon($polygonPoints);
+$polygon = new Polygon($polygonPoints);
 
 // Check if a Point is in a polygon
-$pointInPolygon = $polygon->pointInPolygon(new \Raconteur\PointInPolygon\Point(1,1));
+$pointInPolygon = $polygon->pointInPolygon(new Point(1,1));
 
 ```
