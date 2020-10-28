@@ -42,7 +42,7 @@ class Polygon
      * Check if a point is in the Polygon.
      * 
      * @param Point $point
-     * @return int
+     * @return boolean
      */
     public function pointInPolygon(Point $point) {
         $intersections = 0;
@@ -64,6 +64,6 @@ class Polygon
                 }
             }
         }
-        return $intersections;
+        return !($intersections % 2 == 0);
     }
 }
