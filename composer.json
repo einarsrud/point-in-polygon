@@ -3,7 +3,7 @@
   "description": "Point In Polygon",
   "keywords": [],
   "homepage": "https://github.com/einarsrud/point-in-polygon",
-  "license": "Copyright",
+  "license": "MIT",
   "authors": [
     {
       "name": "Christopher Einarsrud",
